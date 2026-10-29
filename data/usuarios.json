@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "email": "",
+    "contraseña": "",
+    "nombreYapellido": "",
+    "fechaNacimiento": "",
+    "diagnostico": "",
+    "medicamentosHabituales": "",
+    "observaciones": ""
+  },
+  {
+    "id": 1792590005406,
+    "nombreYapellido": "Rosalia Gomez",
+    "email": "rosalia@gmail.com",
+    "contraseña": "undefined",
+    "medicamentosHabituales": "ibu - para",
+    "diagnostico": "epilepsia",
+    "fechaNacimiento": "2009-01-01",
+    "observaciones": ""
+  },
+  {
+    "id": 1792590222073,
+    "nombreYapellido": "mora analia",
+    "email": "mora@gmail.com",
+    "contraseña": "undefined",
+    "medicamentosHabituales": "ibu - epo - jua - kia",
+    "diagnostico": "epi",
+    "fechaNacimiento": "2000-01-01",
+    "observaciones": ""
+  },
+  {
+    "id": 1792590906489,
+    "nombreYapellido": "nada nada",
+    "email": "nada@gmail.com",
+    "contraseña": "undefined",
+    "medicamentosHabituales": "a - b - c - d - e - f - g",
+    "diagnostico": "epi",
+    "fechaNacimiento": "2000-01-01",
+    "observaciones": ""
+  },
+  {
+    "id": 1792596987997,
+    "nombreYapellido": "aa hh",
+    "email": "a@gmail.com",
+    "contraseña": "undefined",
+    "medicamentosHabituales": "a - b - c - d",
+    "diagnostico": "epi",
+    "fechaNacimiento": "2000-01-01",
+    "observaciones": ""
+  },
+  {
+    "id": 1792597590599,
+    "nombreYapellido": "aa bb",
+    "email": "b@gmail.com",
+    "contraseña": "b",
+    "medicamentosHabituales": "a - b",
+    "diagnostico": "epilepsia",
+    "fechaNacimiento": "2000-01-01",
+    "observaciones": "aaaaaaa"
+  },
+  {
+    "id": 1792604382195,
+    "nombreYapellido": "vicky mirchuk",
+    "email": "vicky@gmail.com",
+    "contraseña": "12",
+    "medicamentosHabituales": "coca - brownie",
+    "diagnostico": "epi",
+    "fechaNacimiento": "2010-01-01",
+    "observaciones": ""
+  },
+  {
+    "id": 1793110321827,
+    "nombreYapellido": "vicky xd",
+    "email": "tali@gmail.com",
+    "contraseña": "hola",
+    "medicamentosHabituales": "xd - xd",
+    "diagnostico": "ajhjkxnada",
+    "fechaNacimiento": "2000-01-01",
+    "observaciones": "aaaaaaaaa"
+  },
+  {
+    "id": 1793192419289, 
+    "nombreYapellido": "Marta Perez",
+    "email": "marta@gmail.com",
+    "contraseña": "marta",
+    "medicamentosHabituales": "Amoxidina - Paracetamol",
+    "diagnostico": "Epilepsia",
+    "fechaNacimiento": "1994-01-01",
+    "observaciones": "aaaaaaaa"
+  }
+]

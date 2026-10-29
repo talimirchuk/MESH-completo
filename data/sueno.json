@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1793112311823,
+    "pacienteId": 1793110321827,
+    "fechaDelDia": "2026-10-27",
+    "horasDormidas": "10 hs y 43 min",
+    "cuantasVeces": "1"
+  },
+  {
+    "id": 1793191857607,
+    "pacienteId": 1792604382195,
+    "fechaDelDia": "2026-10-28",
+    "horasDormidas": "10 hs y 47 min",
+    "cuantasVeces": "1"
+  },
+  {
+    "id": 1793192187101,
+    "pacienteId": 1792604382195,
+    "fechaDelDia": "2026-10-28",
+    "horasDormidas": "11 hs y 7 min",
+    "cuantasVeces": "4"
+  },
+  {
+    "id": 1793192770996,
+    "pacienteId": 1793192419289,
+    "fechaDelDia": "2026-10-28",
+    "horasDormidas": "10 hs y 47 min",
+    "cuantasVeces": "0"
+  },
+  {
+    "id": 1793203972034,
+    "pacienteId": 1793110321827,
+    "fechaDelDia": "2026-10-28",
+    "horasDormidas": "13 hs y 7 min",
+    "cuantasVeces": "2"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "pacienteId": 1,
+    "descripcion": "",
+    "hora": "",
+    "fecha": ""
+  },
+  {
+    "id": 1793112844853,
+    "usuarioEmail": "tali@gmail.com",
+    "fecha": "01/01/2000",
+    "hora": "22:2",
+    "descripcion": "aaaaa"
+  }
+]

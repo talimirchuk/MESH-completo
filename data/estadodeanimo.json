@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1793111655900,
+    "pacienteId": 1793110321827,
+    "emocion": "feliz",
+    "intensidad": "moderada",
+    "fecha": "2026-10-27"
+  },
+  {
+    "id": 1793192778874,
+    "pacienteId": 1793192419289,
+    "emocion": "normal/calmado",
+    "intensidad": "moderada",
+    "fecha": "2026-10-28"
+  },
+  {
+    "id": 1793207184515,
+    "pacienteId": 1793110321827,
+    "emocion": "triste",
+    "intensidad": "alta",
+    "fecha": "2026-10-28"
+  },
+  {
+    "id": 1793207188063,
+    "pacienteId": 1793110321827,
+    "emocion": "feliz",
+    "intensidad": "baja",
+    "fecha": "2026-10-28"
+  },
+  {
+    "id": 1793209117033,
+    "pacienteId": 1793110321827,
+    "emocion": "irritable",
+    "intensidad": "alta",
+    "fecha": "2026-10-28"
+  }
+]

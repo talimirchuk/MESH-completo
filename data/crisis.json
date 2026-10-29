@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1793112736098,
+    "pacienteId": 1793110321827,
+    "tipo": "focal",
+    "fecha": "2026-12-01",
+    "horario": "22:02 PM",
+    "observaciones": "nada"
+  },
+  {
+    "id": 1793192850464,
+    "pacienteId": 1793192419289,
+    "tipo": "Focal",
+    "fecha": "2026-10-27",
+    "horario": "09:05 AM",
+    "observaciones": "Normal"
+  },
+  {
+    "id": 1793210307440,
+    "pacienteId": 1793110321827,
+    "tipo": "Focal",
+    "fecha": "2026-10-28",
+    "horario": "14:05 PM",
+    "observaciones": ""
+  },
+  {
+    "id": 1793210331240,
+    "pacienteId": 1793110321827,
+    "tipo": "Localizada",
+    "fecha": "2026-10-25",
+    "horario": "22:02 PM",
+    "observaciones": "Normal"
+  }
+]

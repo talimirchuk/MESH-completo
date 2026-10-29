@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1793112974116,
+    "pacienteId": 1793110321827,
+    "fechaInicio": "2026-12-12",
+    "fechaTermino": "2026-12-17",
+    "observaciones": "nada"
+  },
+  {
+    "id": 1793192868479,
+    "pacienteId": 1793192419289,
+    "fechaInicio": "2026-10-25",
+    "fechaTermino": "2026-10-28",
+    "observaciones": ""
+  },
+  {
+    "id": 1793211280089,
+    "pacienteId": 1793110321827,
+    "fechaInicio": "2026-10-20",
+    "fechaTermino": "2026-10-24",
+    "observaciones": "Normal"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1793113133189,
+    "pacienteId": 1793110321827,
+    "dosis": "500mg",
+    "horario": "23:02",
+    "nombreMedicamento": "amoxidina",
+    "fecha": "2026-12-12",
+    "tipoMedicacion": "Rescate",
+    "momentoDia": "PM"
+  },
+  {
+    "id": 1793113178143,
+    "pacienteId": 1793110321827,
+    "dosis": "400mg",
+    "horario": "09:09",
+    "nombreMedicamento": "ibuprofeno",
+    "fecha": "2026-12-14",
+    "tipoMedicacion": "Crónica",
+    "momentoDia": "AM"
+  },
+  {
+    "id": 1793191976227,
+    "pacienteId": 1792604382195,
+    "dosis": "xd",
+    "horario": "22:02",
+    "nombreMedicamento": "nada",
+    "fecha": "2022-01-01",
+    "tipoMedicacion": "Crónica",
+    "momentoDia": "PM"
+  },
+  {
+    "id": 1793192805916,
+    "pacienteId": 1793192419289,
+    "dosis": "500mg",
+    "horario": "14:05",
+    "nombreMedicamento": "Amoxidina",
+    "fecha": "2026-10-27",
+    "tipoMedicacion": "Crónica",
+    "momentoDia": "PM"
+  }
+]
