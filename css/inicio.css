@@ -1,0 +1,161 @@
+main {
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+/* ENCABEZADO Y SALUDO */
+.inicio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.inicio-header h1 {
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: #000000;
+}
+
+.subtitulo-header {
+    font-size: 20px;
+    color: #333333;
+    margin: 0;
+}
+
+.inicio-icons {
+    display: flex;
+    align-items: center;
+}
+
+.btn-notificacion {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #000000;
+    padding: 5px;
+}
+
+.punto-notificacion {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 9px;
+    height: 9px;
+    background-color: #e63946;
+    border-radius: 50%;
+}
+
+/* TARJETAS SUPERIORES (GRID EN 4 COLUMNAS) */
+.tarjetas-resumen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tarjeta-resumen {
+    background-color: #cbebdb;
+    border: 1.5px solid #a2dac2;
+    border-radius: 16px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 190px;
+    box-sizing: border-box;
+}
+
+.icono-circulo {
+    width: 65px;
+    height: 65px;
+    background-color: #a3dec9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #000000;
+}
+
+.contenido-tarjeta {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.valor-principal {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.linea-info {
+    font-size: 15px;
+    color: #000000;
+    margin: 2px 0;
+}
+
+.linea-info.negrita {
+    font-weight: 700;
+}
+
+/* PRÓXIMOS RECORDATORIOS */
+.contenedor-recordatorios {
+    background-color: #10a396;
+    border-radius: 28px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.encabezado-recordatorios {
+    padding: 20px 30px;
+}
+
+.encabezado-recordatorios h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.lista-recordatorios-inicio {
+    background-color: #ffffff;
+    border: 4px solid #10a396;
+    border-radius: 25px;
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.item-recordatorio-inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 22px;
+    color: #000000;
+}
+
+.item-recordatorio-inicio .hora-rec {
+    font-weight: 500;
+    min-width: 130px;
+}
+
+.item-recordatorio-inicio .desc-rec {
+    font-weight: 400;
+}
+
+.sin-registros-texto {
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+}

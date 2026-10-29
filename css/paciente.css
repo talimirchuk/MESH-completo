@@ -1,0 +1,164 @@
+main {
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px 40px; /* <--- Agregá esto: 30px arriba/abajo y 40px a los lados */
+    box-sizing: border-box; /* Asegura que el padding no desarme el ancho */
+}
+/* encabezado y titulo del paciente */
+.inicio-header-paciente {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.paciente-nombre-titulo {
+    font-size: 55px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.linea-verde-subrayado {
+    width: 100%;
+    max-width: 380px;
+    height: 4px;
+    background-color: #21884F;
+    margin-top: 8px;
+}
+
+/* estructura de dos columnas */
+.ficha-paciente-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.datos-grid-dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.columna-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* labels */
+.tarjeta-dato {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tarjeta-dato .label,
+.seccion-medicamentos .label {
+    font-size: clamp(16px, 1.8vw, 22px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+/* contenedor input / registro */
+.caja-input-paciente {
+    background-color: #D1E4E1;
+    border-radius: 16px;
+    width: 100%;
+    min-height: 52px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.caja-observaciones {
+    min-height: 90px;
+    align-items: flex-start;
+    padding-top: 12px;
+}
+
+.caja-input-paciente .valor {
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    width: 85%;
+    word-break: break-word;
+}
+
+/* input edicion dentro de la caja */
+.caja-input-paciente input {
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 85%;
+    color: #000000;
+}
+
+/* lapiz e icono de edicion */
+.btn-lapiz {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-editar-completo {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+/* medicamentos habituales */
+.seccion-medicamentos {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contenedor-medicamentos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjeta-pildora-med {
+    border: 1.5px solid #21884F;
+    border-radius: 14px;
+    padding: 8px 14px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info-pildora-med {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 85%;
+}
+
+.svg-pildora {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.tarjeta-pildora-med input {
+    font-size: clamp(14px, 1.3vw, 17px);
+    border: none;
+    outline: none;
+    width: 80%;
+}

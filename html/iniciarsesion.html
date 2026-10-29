@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión - MESH</title>
+    <link class="css-path" rel="stylesheet" href="../css/iniciarsesion.css">
+</head>
+<body>
+   <div class="lado-izquierdo">
+        
+        <!-- logo fijado arriba a la izquierda -->
+        <div class="logo-contenedor">
+            <div class="caja-blanca-logo"></div>
+            <h1 class="titulo-logo">MESH</h1>
+        </div>
+
+        <!-- frase de bienvenida -->
+        <div class="contenido-izq">
+            <p class="frase-principal">¡Que lindo verte de nuevo!</p>
+        </div>
+
+        <!-- circulos decorativos de primera.html -->
+        <div class="circulo circulo-arriba"></div>
+        <div class="circulo circulo-centro"></div>
+        <div class="circulo circulo-abajo-peq"></div>
+        <div class="circulo circulo-abajo-izq"></div>
+
+    </div>
+
+    <!-- LADO DERECHO BLANCO -->
+    <div class="lado-derecho">
+        
+        <form class="formulario-login">
+            
+            <h1 class="titulo-form">Iniciar sesión</h1>
+
+            <!-- campo email -->
+            <div class="caja-input">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-estilo" placeholder="Ingresá tu email" required>
+            </div>
+
+            <!-- campo contrasena con ojo -->
+<div class="caja-input">
+    <label for="password">Contraseña</label>
+    <div class="campo-con-icono">
+        <input type="password" id="password" class="input-estilo" placeholder="Ingresá tu contraseña" required>
+        <div class="btn-ojo-pass" id="ojo-contrasena">
+            <!-- 1. Pestaña (Ojo cerrado - visible al inicio) -->
+            <svg class="svg-pestana" width="32" height="13" viewBox="0 0 36 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11108 1.11133C1.11108 1.11133 6.88608 7.39704 17.6111 7.39704C28.3361 7.39704 34.1111 1.11133 34.1111 1.11133M4.41108 3.69633L1.11108 7.39704M34.1111 7.39704L30.8177 3.70104M12.5192 6.89419L11.0111 11.3256M22.665 6.90676L24.2111 11.3256" stroke="black" stroke-width="2.22212" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <!-- 2. Ojo abierto (AGREGAR ESTE SVG: inicia oculto) -->
+            <svg class="svg-ojo oculto" width="35" height="17" viewBox="0 0 35 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.2093 9.19613C34.0288 8.53291 34.0288 7.63613 33.2093 6.97184C30.6281 4.88363 24.4352 0.583984 17.2049 0.583984C9.97469 0.583984 3.78179 4.88363 1.20054 6.97184C0.801265 7.28976 0.584473 7.68112 0.584473 8.08398C0.584473 8.48685 0.801265 8.87821 1.20054 9.19613C3.78179 11.2843 9.97469 15.584 17.2049 15.584C24.4352 15.584 30.6281 11.2843 33.2093 9.19613Z" stroke="black" stroke-width="1.16883" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.2052 11.2987C20.0698 11.2987 22.3919 9.8596 22.3919 8.0844C22.3919 6.3092 20.0698 4.87012 17.2052 4.87012C14.3407 4.87012 12.0186 6.3092 12.0186 8.0844C12.0186 9.8596 14.3407 11.2987 17.2052 11.2987Z" stroke="black" stroke-width="1.16883" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+            <p class="texto-ayuda" id="texto-ayuda"></p>
+
+            <button type="button" id="continuar" class="btn-ingresar">Ingresar</button>
+
+        </form>
+
+    </div>
+    <script src="../js/iniciarsesion.js"></script>
+</body>
+</html>

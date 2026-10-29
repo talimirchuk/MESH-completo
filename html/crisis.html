@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESH-Crisis</title>
+    <link rel="stylesheet" href="../css/crisis.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <a href="../html/registros.html" class="btn-volver"><i class="fa-solid fa-left-long"></i></a>
+        <h1>CRISIS <i class="fa-solid fa-triangle-exclamation"></i></h1>
+    </div>
+
+    <form>
+        <div class="caja-pregunta caja-tipo">
+            <label for="tipo-crisis">Tipo de crisis</label>
+            <input type="text" class="formulario" id="tipo-crisis" list="lista-tipos" autocomplete="off">
+            <datalist id="lista-tipos">
+                <!-- las opciones las genera crisis.js -->
+            </datalist>
+        </div>
+
+        <div class="caja-pregunta caja-fecha">
+            <label for="dia">Día</label>
+            <input type="number" class="formulario" id="dia" min="1" max="31">
+        </div>
+
+        <div class="caja-pregunta caja-fecha">
+            <label for="mes">Mes</label>
+            <select class="formulario" id="mes">
+                <option value=""></option>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+        </div>
+
+        <div class="caja-pregunta caja-fecha">
+            <label for="anio">Año</label>
+            <input type="number" class="formulario" id="anio" min="1000" max="9999">
+        </div>
+
+        <div class="caja-pregunta caja-izq">
+            <label for="observaciones">Observaciones</label>
+            <textarea class="formulario" id="observaciones"></textarea>
+        </div>
+
+        <button id="guardar" type="button"><i class="fa-regular fa-floppy-disk"></i> Guardar registro</button>
+    </form>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/crisis.js"></script>
+</body>
+</html>

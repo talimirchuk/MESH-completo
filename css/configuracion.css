@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Evita la barra de scroll vertical sin alterar el layout */
+body {
+    overflow-y: hidden;
+}
+
+.main-configuracion {
+    padding: 30px 40px;
+    font-family: 'Comic Relief', 'Comic Sans MS', cursive, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+
+/* Título Configuración con línea verde abajo */
+.titulo-configuracion {
+    font-size: 55px;
+    font-weight: 400;
+    color: #1a2332;
+    margin: 0;
+    display: inline-block;
+    align-self: flex-start;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.titulo-configuracion::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #2e8b57;
+    border-radius: 4px;
+}
+
+/* Envoltorio centrado */
+.contenedor-centrado {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -40px; /* Eleva el bloque para un centrado óptico perfecto */
+}
+
+/* Contenedor de las opciones con ancho máximo proporcional */
+.contenedor-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    max-width: 520px;
+}
+
+/* Botones principales */
+.btn-opcion-config {
+    width: 100%;
+    height: 80px;
+    background-color: #C7EAE5;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-opcion-config:hover {
+    background-color: #b0e0d8;
+    transform: scale(1.02);
+}
+
+.btn-opcion-config:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================
+   OVERLAY MODALES (Frame 107 y Frame 109)
+========================================== */
+.overlay-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.overlay-modal.activo {
+    display: flex;
+}
+
+.tarjeta-modal {
+    width: 785px;
+    min-height: 432px;
+    background-color: #FFFFFF;
+    border: 15px solid #14B8A6;
+    border-radius: 45px;
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+    padding: 40px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.bloque-campo-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.etiqueta-modal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 38px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.etiqueta-modal svg {
+    flex-shrink: 0;
+}
+
+.recuadro-valor-modal {
+    width: 100%;
+    max-width: 621px;
+    height: 66px;
+    background-color: rgba(213, 237, 228, 0.8);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 28px;
+    color: #000000;
+}
+
+.tarjeta-eliminar {
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-eliminar h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+    color: #000000;
+}
+
+.tarjeta-eliminar p {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    max-width: 585px;
+}
+
+.btn-modal-cancelar {
+    width: 378px;
+    height: 71px;
+    background-color: #D5EDE4;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #000000;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.btn-modal-eliminar {
+    width: 378px;
+    height: 71px;
+    background-color: #DD2424;
+    opacity: 0.85;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.btn-modal-cancelar:hover,
+.btn-modal-eliminar:hover {
+    transform: scale(1.02);
+}

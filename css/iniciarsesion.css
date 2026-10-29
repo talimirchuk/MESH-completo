@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* variables globales de mesh */
+:root {
+    --verde-fondo-menta: #D5EDE4;
+    --verde-circulos-borde: #46D3C1;
+    --gris-caja-input: #d9d9d9;
+    --gris-boton-hover: #c5c5c5;
+    --negro-texto: #000000;
+    --rojo-error: #d93025;
+    
+    --fuente-textos: 'Inter', sans-serif;
+    
+    --redondeo-input: 15px;
+    --redondeo-boton: 74px;
+}
+
+/* reseteo basico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-textos);
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* oculta desbordes de los circulos */
+}
+
+/* ===================================================
+   LADO IZQUIERDO MENTA (IDENTICO A CREARCUENTA / PRIMERA)
+   =================================================== */
+.lado-izquierdo {
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--verde-fondo-menta); 
+    position: relative; /* fija el logo y los circulos dentro */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+/* logo clavado arriba a la izquierda */
+.logo-contenedor {
+    position: absolute;
+    top: 2.5vh;
+    left: 1.8vw;
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    z-index: 3;
+}
+
+.caja-blanca-logo {
+    width: 5.65vw;
+    height: 8.2vh;
+    min-width: 45px;
+    min-height: 35px;
+    background-color: #ffffff;
+}
+
+.titulo-logo {
+    font-size: clamp(24px, 2.5vw, 50px);
+    font-weight: 400;
+    color: var(--negro-texto);
+    line-height: 1;
+}
+
+/* contenido e frase de bienvenida de iniciar sesion */
+.contenido-izq {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+.frase-principal {
+    font-size: clamp(26px, 2.5vw, 42px);
+    font-weight: 400;
+    color: var(--negro-texto);
+    line-height: 1.2;
+}
+
+/* circulos decorativos exactos de primera.html */
+.circulo {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--verde-circulos-borde);
+    background: transparent;
+    z-index: 1;
+}
+
+.circulo-arriba {
+    width: 220px;
+    height: 220px;
+    top: -110px;
+    left: 40%;
+    border-width: 20px;
+}
+
+.circulo-centro {
+    width: 80px;
+    height: 80px;
+    top: 25%;
+    right: 20%;
+    border-width: 12px;
+}
+
+.circulo-abajo-peq {
+    width: 45px;
+    height: 45px;
+    bottom: 25%;
+    left: 32%;
+    border-width: 10px;
+}
+
+.circulo-abajo-izq {
+    width: 280px;
+    height: 280px;
+    bottom: -140px;
+    left: -100px;
+    border-width: 22px;
+}
+
+/* ===================================================
+   LADO DERECHO (FORMULARIO INICIAR SESIÓN)
+   =================================================== */
+.lado-derecho {
+    width: 50vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    max-width: 589px;
+}
+
+/* titulo iniciar sesion en minusculas */
+.titulo-form {
+    font-size: clamp(32px, 3.2vw, 64px);
+    font-weight: 400;
+    color: var(--negro-texto);
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.caja-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.caja-input label {
+    font-size: clamp(20px, 2vw, 45px);
+    font-weight: 400;
+    color: var(--negro-texto);
+}
+
+.campo-con-icono {
+    position: relative;
+    width: 100%;
+}
+
+/* inputs grises */
+.input-estilo {
+    width: 100%;
+    height: clamp(48px, 6.8vh, 74px);
+    background-color: var(--gris-caja-input);
+    border: none;
+    border-radius: var(--redondeo-input);
+    padding: 0 20px;
+    font-size: clamp(16px, 1.4vw, 24px);
+    color: var(--negro-texto);
+}
+
+.input-estilo:focus {
+    outline: none;
+}
+
+/* ojito contraseña */
+.btn-ojo-pass {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-ayuda {
+    font-size: 15px;
+    color: var(--rojo-error);
+    text-align: center;
+    min-height: 20px;
+}
+
+/* boton ingresar abombado (width: 589px, height: 100px, radius: 74px) */
+.btn-ingresar {
+    width: 100%;
+    max-width: 589px;
+    height: clamp(55px, 9vh, 100px);
+    align-self: center;
+    background-color: var(--gris-caja-input);
+    border: none;
+    border-radius: var(--redondeo-boton);
+    font-size: clamp(22px, 2.2vw, 45px);
+    font-weight: 400;
+    color: var(--negro-texto);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-ingresar:hover {
+    background-color: var(--gris-boton-hover);
+}
+
+/* para el ojo ocultar */
+.oculto {
+    display: none !important;
+}
+
+.svg-pestana,
+.svg-ojo {
+    transition: opacity 0.2s ease;
+}

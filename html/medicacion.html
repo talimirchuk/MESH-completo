@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESH - Medicación</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/medicacion.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <a href="registros.html" class="btn-volver">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h1>MEDICACIÓN <i class="fa-solid fa-capsules"></i></h1>
+    </div>
+
+    <form id="form-medicacion">
+
+        <!-- Fila 1: ¿qué medicación tomó? / dosis -->
+        <div class="caja-pregunta">
+            <label for="tipo-medicacion">¿Qué medicación tomó?</label>
+            <select id="tipo-medicacion" class="formulario" required>
+                <option value="" disabled selected hidden></option>
+                <option value="Crónica">Crónica</option>
+                <option value="Rescate">Rescate</option>
+            </select>
+        </div>
+
+        <div class="caja-pregunta">
+            <label for="dosis">Dosis</label>
+            <input type="text" id="dosis" class="formulario" list="opciones-dosis" required autocomplete="off">
+            <datalist id="opciones-dosis"></datalist>
+        </div>
+
+        <!-- Fila 2: hora / fecha (día) / mes / año en 4 columnas -->
+        <div class="caja-fecha-cuatro">
+            <div class="caja-pregunta">
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" class="formulario input-hora" required>
+            </div>
+
+            <div class="caja-pregunta">
+                <label for="fecha-dia">Día</label>
+                <input type="text" id="fecha-dia" class="formulario" maxlength="2" required>
+            </div>
+
+            <div class="caja-pregunta">
+                <label for="fecha-mes">Mes</label>
+                <select id="fecha-mes" class="formulario" required>
+                    <option value="" disabled selected hidden></option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+            </div>
+
+            <div class="caja-pregunta">
+                <label for="fecha-anio">Año</label>
+                <input type="text" id="fecha-anio" class="formulario" maxlength="4" required>
+            </div>
+        </div>
+
+        <!-- Fila 3: observaciones / botón guardar registro -->
+        <div class="caja-pregunta">
+            <label for="observaciones">Observaciones</label>
+            <textarea id="observaciones" class="formulario"></textarea>
+        </div>
+
+        <div class="caja-pregunta caja-guardar">
+            <button type="submit" id="guardar">
+                <i class="fa-solid fa-floppy-disk"></i>
+                <span>Guardar registro</span>
+            </button>
+        </div>
+
+    </form>
+
+    <script src="../js/medicacion.js"></script>
+</body>
+</html>

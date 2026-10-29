@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESH-Estado de ánimo</title>
+    <link class="css-path" rel="stylesheet" href="../css/animo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="animo-container">
+        <!-- Encabezado con flecha volver y título -->
+        <header class="encabezado">
+            <a href="registros.html" class="btn-volver" title="Volver a registros">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <h1 class="titulo-pagina">ESTADO DE ÁNIMO <i class="fa-regular fa-face-smile"></i></h1>
+        </header>
+
+        <form id="form-animo" class="form-animo">
+            <!-- Pregunta principal -->
+            <p class="pregunta-titulo">¿Cómo te sentiste durante el día?</p>
+
+            <!-- Botones circulares de estado de ánimo -->
+            <div class="opciones-animo">
+                <div class="item-animo">
+                    <button type="button" class="btn-circulo-animo" data-valor="Feliz"></button>
+                    <span class="label-animo">Feliz</span>
+                </div>
+                <div class="item-animo">
+                    <button type="button" class="btn-circulo-animo" data-valor="Irritable"></button>
+                    <span class="label-animo">Irritable</span>
+                </div>
+                <div class="item-animo">
+                    <button type="button" class="btn-circulo-animo" data-valor="Normal/Calmado"></button>
+                    <span class="label-animo">Normal/Calmado</span>
+                </div>
+                <div class="item-animo">
+                    <button type="button" class="btn-circulo-animo" data-valor="Ansioso"></button>
+                    <span class="label-animo">Ansioso</span>
+                </div>
+                <div class="item-animo">
+                    <button type="button" class="btn-circulo-animo" data-valor="Triste"></button>
+                    <span class="label-animo">Triste</span>
+                </div>
+            </div>
+
+            <!-- Campo oculto para la emoción seleccionada -->
+            <input type="hidden" id="animo-seleccionado" value="">
+
+            <!-- Sección de Intensidad de la emoción -->
+            <div class="seccion-intensidad">
+                <label for="range-intensidad" class="label-intensidad">Intensidad de la emoción</label>
+                
+                <div class="barra-intensidad-caja">
+                    <input type="range" id="range-intensidad" min="1" max="3" value="2" step="1">
+                    <div class="etiquetas-intensidad">
+                        <span class="etiqueta-nivel">Moderada</span>
+                        <span class="etiqueta-nivel">Media</span>
+                        <span class="etiqueta-nivel">Intensa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón Guardar -->
+            <div class="contenedor-guardar">
+                <button type="submit" id="btn-guardar-animo" class="btn-guardar">
+                    <i class="fa-solid fa-floppy-disk"></i> Guardar registro
+                </button>
+            </div>
+        </form>
+    </main>
+    <script src="../js/registros.js"></script>
+    <script src="../js/animo.js"></script>
+</body>
+</html>

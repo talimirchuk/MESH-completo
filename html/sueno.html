@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESH-Sueño</title>
+    <link class="css-path" rel="stylesheet" href="../css/sueno.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <a href="../html/registros.html" class="btn-volver"><i class="fa-solid fa-left-long"></i></a>
+        <h1>SUEÑO <i class="fa-solid fa-moon"></i></h1>
+    </div>
+
+    <form>
+        <div class="caja-pregunta">
+            <label>¿Se despertó durante la noche?</label>
+            <div class="opciones-si-no">
+                <button type="button" class="btn-opcion" id="btn-si">Sí</button>
+                <button type="button" class="btn-opcion" id="btn-no">No</button>
+            </div>
+        </div>
+
+        <div class="caja-pregunta">
+            <label for="cant-veces">¿Cuántas veces?</label>
+            <input type="number" class="formulario" id="cant-veces" min="0">
+        </div>
+
+        <div class="caja-pregunta">
+            <label for="hora-durmio">¿A qué hora se durmió?</label>
+            <div class="campo-hora-caja">
+                <input type="time" class="input-hora" id="hora-durmio">
+                <div class="opciones-periodo">
+                    <button type="button" class="btn-periodo">AM</button>
+                    <button type="button" class="btn-periodo">PM</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="caja-pregunta">
+            <label for="hora-desperto">¿A qué hora se despertó?</label>
+            <div class="campo-hora-caja">
+                <input type="time" class="input-hora" id="hora-desperto">
+                <div class="opciones-periodo">
+                    <button type="button" class="btn-periodo">AM</button>
+                    <button type="button" class="btn-periodo">PM</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="guardar" type="button"><i class="fa-regular fa-floppy-disk"></i> Guardar registro</button>
+    </form>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/sueno.js"></script>
+</body>
+</html>

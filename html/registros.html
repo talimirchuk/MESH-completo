@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros - MESH</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registros.css">
+    <meta name="view-transition" content="same-origin">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <!-- ÁREA RESERVADA PARA EL LOGO -->
+        <div class="sidebar-logo">
+            <svg width="112" height="89" viewBox="0 0 112 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="112" height="89" fill="white"/>
+            </svg>
+            <span class="logo-texto">MESH</span>
+        </div>
+    
+        <!-- NAVEGACIÓN -->
+        <nav class="sidebar-nav">
+            <!-- Inicio -->
+            <a href="inicio.html" class="nav-item">
+                <span class="icon-container">
+                    <svg width="65" height="60" viewBox="0 0 65 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.6521 29.5183L35.9487 2.45623L34.0918 0.641343C33.6687 0.230552 33.0965 0 32.5001 0C31.9037 0 31.3316 0.230552 30.9085 0.641343L1.34818 29.5183C0.914645 29.9404 0.572013 30.4431 0.34051 30.9967C0.109008 31.5503 -0.00667224 32.1437 0.000297178 32.7417C0.0289756 35.2082 2.12967 37.1773 4.65337 37.1773H7.70046V60H57.2998V37.1773H60.4114C61.6374 37.1773 62.7917 36.7078 63.6592 35.8599C64.0864 35.4438 64.4249 34.9489 64.655 34.4041C64.8851 33.8592 65.0024 33.2751 65 32.6856C65 31.4944 64.5196 30.3662 63.6521 29.5183ZM36.5151 54.9548H28.4851V40.6599H36.5151V54.9548ZM52.1377 32.1321V54.9548H41.1037V38.9782C41.1037 37.4296 39.8203 36.1753 38.2358 36.1753H26.7644C25.18 36.1753 23.8966 37.4296 23.8966 38.9782V54.9548H12.8626V32.1321H5.97975L32.5073 6.22614L34.1635 7.84482L59.0277 32.1321H52.1377Z" fill="black"/>
+                    </svg>
+                </span>
+                <span class="nav-label">Inicio</span>
+            </a>
+    
+            <!-- Historial -->
+            <a href="historial.html" class="nav-item">
+                <span class="icon-container">
+                    <svg width="71" height="66" viewBox="0 0 71 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.57268 46.5342C10.6272 52.2367 15.5824 56.8845 21.7103 59.7949C27.7933 62.6797 34.7298 63.6535 41.4668 62.5683C48.2243 61.4705 54.4154 58.3832 59.1144 53.7679C63.8557 49.1078 66.8747 43.1803 67.7378 36.8371C68.6127 30.4792 67.2935 24.0286 63.9678 18.4028C60.6726 12.8198 55.5216 8.36171 49.2741 5.6855C43.069 3.03259 36.0958 2.32099 29.4128 3.65873C22.7322 4.99547 17.2577 8.03562 12.7294 12.8425C12.1841 13.3759 10.0752 15.5293 8.32379 18.7795M19.2511 19.6662L6.2185 22.0663L3.00098 9.6657M35.5012 22.9997V36.3337L46.3346 43.0007" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="nav-label">Historial</span>
+            </a>
+    
+            <!-- Paciente -->
+    <a href="paciente.html" class="nav-item">
+        <span class="icon-container">
+            <svg width="65" height="60" viewBox="0 0 65 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32.5 0C14.5925 0 0 13.47 0 30C0 39.78 5.135 48.48 13 53.94V54H13.0975C18.525 57.75 25.22 60 32.5 60C39.78 60 46.5075 57.75 51.9025 54H52V53.94C59.865 48.45 65 39.78 65 30C65 13.47 50.4075 0 32.5 0ZM20.085 51.06C21.4175 47.55 24.9925 45 29.25 45H35.75C40.0075 45 43.615 47.55 44.915 51.06C41.21 52.92 36.985 54 32.5 54C28.015 54 23.7575 52.95 20.085 51.06ZM50.31 47.43C47.6775 42.45 42.1525 38.97 35.75 38.97H29.25C22.8475 38.97 17.355 42.45 14.69 47.43C12.1015 45.1932 10.0387 42.489 8.62984 39.4854C7.22096 36.4819 6.496 33.243 6.5 29.97C6.5 16.74 18.1675 5.97 32.5 5.97C46.8325 5.97 58.5 16.74 58.5 29.97C58.5 36.84 55.3475 43.05 50.31 47.43Z" fill="black"/>
+                <circle cx="32.5" cy="22" r="7" stroke="black" stroke-width="6" fill="none"/>
+            </svg>
+        </span>
+        <span class="nav-label">Paciente</span>
+    </a>
+    
+            <!-- Registros -->
+            <a href="registros.html" class="nav-item active">
+                <span class="icon-container">
+                    <svg width="64" height="72" viewBox="0 0 64 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44.6875 9.94727H53.75C55.6728 9.94727 57.5169 10.6792 58.8765 11.9821C60.2362 13.285 61 15.0521 61 16.8946V62.0525C61 63.8951 60.2362 65.6622 58.8765 66.9651C57.5169 68.2679 55.6728 68.9999 53.75 68.9999H10.25C8.32718 68.9999 6.48311 68.2679 5.12348 66.9651C3.76384 65.6622 3 63.8951 3 62.0525V16.8946C3 15.0521 3.76384 13.285 5.12348 11.9821C6.48311 10.6792 8.32718 9.94727 10.25 9.94727H19.3125" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.7511 8.26263C20.1432 6.75964 21.0482 5.42535 22.3224 4.47182C23.5967 3.51829 25.1669 3.00023 26.7836 3H37.2127C38.8295 3.00023 40.3997 3.51829 41.6739 4.47182C42.9481 5.42535 43.8532 6.75964 44.2453 8.26263L46.5 16.8947H17.5L19.7511 8.26263Z" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.125 37.7373H42.875M21.125 51.632H42.875" stroke="black" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="nav-label">Registros</span>
+            </a>
+    
+            <!-- Gráficos -->
+            <a href="graficos.html" class="nav-item">
+                <span class="icon-container">
+                    <svg width="65" height="60" viewBox="0 0 65 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M64.3229 53.8636H6.09375V0.681818C6.09375 0.306818 5.78906 0 5.41667 0H0.677083C0.304687 0 0 0.306818 0 0.681818V59.3182C0 59.6932 0.304687 60 0.677083 60H64.3229C64.6953 60 65 59.6932 65 59.3182V54.5455C65 54.1705 64.6953 53.8636 64.3229 53.8636ZM15.0482 40.7131C15.3105 40.9773 15.7337 40.9773 16.0046 40.7131L27.7096 28.9858L38.5091 39.929C38.7715 40.1932 39.2031 40.1932 39.4655 39.929L62.7741 16.4659C63.0365 16.2017 63.0365 15.767 62.7741 15.5028L59.4225 12.1278C59.2953 12.001 59.1234 11.9298 58.9443 11.9298C58.7652 11.9298 58.5934 12.001 58.4661 12.1278L39 31.7216L28.2174 20.7955C28.0902 20.6686 27.9183 20.5974 27.7393 20.5974C27.5602 20.5974 27.3883 20.6686 27.2611 20.7955L11.7051 36.3665C11.5791 36.4946 11.5084 36.6677 11.5084 36.848C11.5084 37.0283 11.5791 37.2014 11.7051 37.3295L15.0482 40.7131Z" fill="black"/>
+                    </svg>
+                </span>
+                <span class="nav-label">Gráficos</span>
+            </a>
+    
+            <!-- Recordatorios / Notificación -->
+            <a href="recordatorios.html" class="nav-item">
+                <span class="icon-container">
+                    <i class="fa-regular fa-bell" style="font-size: 32px; color: black;"></i>
+                </span>
+                <span class="nav-label">Recordatorios</span>
+            </a>
+    
+            <!-- Configuración -->
+            <a href="configuracion.html" class="nav-item">
+                <span class="icon-container">
+                    <svg width="82" height="77" viewBox="0 0 82 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M72.0745 26.8262L70.7015 26.0688L70.2775 25.8312C69.2548 25.2238 68.3932 24.3838 67.7641 23.3809C67.6966 23.2807 67.6366 23.173 67.5165 22.9651C66.7077 21.6803 66.3151 20.1815 66.3911 18.6696L66.4136 17.0917C66.4586 14.5672 66.4812 13.2974 66.121 12.1614C65.8024 11.1506 65.269 10.2189 64.5567 9.42889C63.7539 8.53786 62.6397 7.89929 60.4077 6.62958L58.5545 5.57148C56.3337 4.30548 55.2195 3.67062 54.0378 3.4293C52.9938 3.2155 51.9157 3.22436 50.8754 3.45529C49.7012 3.71517 48.6021 4.36859 46.4075 5.66801L46.3963 5.67544L45.0683 6.4588C44.8582 6.58503 44.7494 6.64443 44.6444 6.70383C43.6015 7.27929 42.4385 7.59486 41.2419 7.63198C41.1218 7.63941 40.998 7.63941 40.7542 7.63941L40.2665 7.6357C39.0694 7.59796 37.8989 7.27716 36.8527 6.70012C36.7477 6.64443 36.6464 6.58131 36.4363 6.45508L35.0971 5.66058C32.8875 4.34632 31.7809 3.6929 30.5992 3.4293C29.555 3.19799 28.4729 3.1904 27.4255 3.40703C26.2401 3.65206 25.1297 4.29063 22.9051 5.56777L22.8939 5.57148L21.0632 6.62215L21.0444 6.637C18.8386 7.89929 17.732 8.53786 16.9367 9.42518C16.2279 10.2137 15.6972 11.1427 15.3798 12.1502C15.0235 13.29 15.0422 14.5597 15.0872 17.0992L15.1135 18.6733C15.1135 18.9146 15.1247 19.0334 15.121 19.1485C15.1016 20.4974 14.7112 21.8155 13.9918 22.9614C13.868 23.1693 13.8118 23.2732 13.748 23.3698C13.1155 24.3802 12.2471 25.2256 11.2158 25.8349L10.7957 26.0688L9.44141 26.8114C7.18308 28.0477 6.05391 28.6677 5.23611 29.5513C4.50902 30.3303 3.95898 31.2544 3.62301 32.2615C3.24788 33.4012 3.24788 34.6747 3.25163 37.229L3.25913 39.3192C3.26288 41.8549 3.27038 43.1209 3.64927 44.2532C3.98384 45.254 4.52989 46.1728 5.25111 46.9486C6.06891 47.8248 7.18683 48.4411 9.4264 49.6736L10.7694 50.4125C10.9982 50.5387 11.1145 50.5981 11.2233 50.6649C12.3989 51.3623 13.359 52.3651 13.9993 53.5645L14.2507 54.01C14.8843 55.194 15.1825 56.5256 15.1135 57.8637L15.0872 59.3747C15.0422 61.9216 15.0235 63.1987 15.3836 64.3385C15.7025 65.3483 16.2352 66.2802 16.9479 67.071C17.7507 67.962 18.8686 68.5968 21.0969 69.8703L22.9501 70.9284C25.1747 72.1944 26.2851 72.8292 27.4668 73.0705C28.5108 73.2844 29.5889 73.2755 30.6292 73.0446C31.8071 72.7847 32.9063 72.1313 35.1084 70.8244L36.4363 70.0373L36.8602 69.7923C37.9031 69.2206 39.0661 68.9013 40.2628 68.8642L40.7504 68.8604H41.2381C42.431 68.8976 43.6015 69.2206 44.6519 69.796L44.997 70.0002L46.4075 70.8393C48.6208 72.1535 49.7237 72.807 50.9054 73.0668C51.9491 73.3006 53.0312 73.3107 54.0791 73.0965C55.2608 72.8515 56.3787 72.2092 58.6033 70.9321L60.4602 69.8666C62.666 68.5968 63.7727 67.962 64.5679 67.0747C65.2807 66.2839 65.8059 65.3557 66.1248 64.3496C66.4811 63.2173 66.4624 61.9587 66.4174 59.4564L66.3874 57.8228V57.3513C66.405 56.0016 66.7941 54.6821 67.5128 53.5348L67.7566 53.1264C68.3891 52.1159 69.2575 51.2705 70.2888 50.6612L70.7015 50.4347L70.709 50.431L72.0632 49.6885C74.3215 48.4485 75.4507 47.8322 76.2723 46.9486C77 46.1689 77.5477 45.2408 77.8816 44.2384C78.2567 43.106 78.2567 41.8363 78.2492 39.3117L78.2417 37.1807C78.238 34.645 78.2342 33.3753 77.8553 32.2429C77.5192 31.2431 76.9719 30.3256 76.2497 29.5513C75.4357 28.6751 74.3178 28.0588 72.082 26.8299L72.0745 26.8262Z" stroke="black" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.25 18.1005C3.25 22.0391 4.83093 25.8163 7.64501 28.6013C10.4591 31.3863 14.2758 32.9509 18.2555 32.9509C22.2352 32.9509 26.0519 31.3863 28.866 28.6013C31.6801 25.8163 33.261 22.0391 33.261 18.1005C33.261 14.1619 31.6801 10.3846 28.866 7.5996C26.0519 4.8146 22.2352 3.25 18.2555 3.25C14.2758 3.25 10.4591 4.8146 7.64501 7.5996C4.83093 10.3846 3.25 14.1619 3.25 18.1005Z" transform="translate(22.5, 20)" stroke="black" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="nav-label">Configuración</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-registros">
+        <h1 class="titulo-registros">Registros</h1>
+        <p class="subtitulo-pregunta">¿Qué querés registrar hoy?</p>
+
+        <!-- TARJETAS CIRCULARES -->
+        <div class="registros-flex-container">
+            <!-- Sueño -->
+            <div class="registro-item">
+                <button class="registro-circulo" data-tipo="sueno" aria-label="Sueño">
+                    <svg width="60" height="60" viewBox="0 0 102 103" fill="none">
+                        <path d="M95.4012 58.7608C91.424 59.9336 87.3449 60.5454 83.2657 60.5454C60.2186 60.5454 41.4546 41.7814 41.4546 18.7343C41.4546 14.6551 42.0664 10.576 43.2392 6.59881C43.8001 4.81419 43.2902 2.82561 41.9644 1.49989C40.6387 0.174166 38.7011 -0.335727 36.8655 0.225155C26.1763 3.453 16.8145 10.0449 10.1724 19.0205C3.5303 27.996 -0.0372648 38.8758 0.000293539 50.0417C0.000293539 78.6976 23.3024 102.051 52.0093 102.051C75.1075 102.051 95.0953 87.2128 101.775 65.1345C102.336 63.3499 101.826 61.3613 100.5 60.0356C99.1744 58.7098 97.2368 58.1999 95.4012 58.7608ZM52.0093 91.8529C28.9622 91.8529 10.1981 73.0888 10.1981 50.0417C10.1687 42.6147 12.1303 35.3156 15.8787 28.9038C19.6271 22.4921 25.0253 17.2021 31.5117 13.5843C31.3587 15.318 31.2567 17.0516 31.2567 18.7852C31.2567 47.4412 54.5588 70.7943 83.2657 70.7943C84.9994 70.7943 86.733 70.6923 88.4667 70.5393C81.2262 83.5926 67.4591 91.8529 52.0093 91.8529ZM71.3852 30.6657L76.1782 20.162L86.682 15.369L76.1782 10.576L71.3852 0.0721876L66.5923 10.576L56.0885 15.369L66.5923 20.162L71.3852 30.6657ZM93.0557 28.1163L90.2513 34.235L84.1326 37.0394L90.2513 39.8438L93.0557 45.9625L95.8601 39.8438L101.979 37.0394L95.8601 34.235L93.0557 28.1163Z" fill="black"/>
+                    </svg>
+                </button>
+                <span class="etiqueta-registro">Sueño</span>
+            </div>
+
+            <!-- Estado de Ánimo -->
+            <div class="registro-item">
+                <button class="registro-circulo" data-tipo="animo" aria-label="Estado de Ánimo">
+                    <svg width="60" height="60" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39.2478 39.2487C35.122 43.3745 29.5262 45.6924 23.6914 45.6924C17.8566 45.6924 12.2609 43.3745 8.13506 39.2487C4.00926 35.1229 1.69141 29.5271 1.69141 23.6924C1.69141 17.8576 4.00926 12.2618 8.13506 8.13603C12.2609 4.01023 17.8566 1.69238 23.6914 1.69238C29.5262 1.69238 35.122 4.01023 39.2478 8.13603C43.3736 12.2618 45.6914 17.8576 45.6914 23.6924C45.6914 29.5271 43.3736 35.1229 39.2478 39.2487Z" stroke="black" stroke-width="3.38" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="16" cy="18" r="2.5" fill="black"/>
+                        <circle cx="32" cy="18" r="2.5" fill="black"/>
+                        <path d="M14 28C17 35 31 35 34 28" stroke="black" stroke-width="3.38" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <span class="etiqueta-registro">Estado de ánimo</span>
+            </div>
+
+            <!-- Medicación -->
+            <div class="registro-item">
+                <button class="registro-circulo" data-tipo="medicacion" aria-label="Medicación">
+                    <svg width="55" height="55" viewBox="0 0 102 103" fill="none">
+                        <path d="M68.9341 0.000173397C64.5846 -0.0139592 60.2757 0.835947 56.2573 2.50056C52.239 4.16518 48.5913 6.61134 45.5259 9.69708L9.65781 45.5652C-3.21927 58.4423 -3.21927 79.4523 9.65781 92.3815C15.9139 98.6375 24.2032 102.078 33.0659 102.078C41.9287 102.078 50.218 98.6375 56.4741 92.3815L92.3422 56.5133C105.219 43.6363 105.219 22.6263 92.3422 9.69708C89.2769 6.61134 85.6292 4.16518 81.6108 2.50056C77.5925 0.835947 73.2835 -0.0139592 68.9341 0.000173397ZM84.9392 49.1103L70.7066 63.3429L38.6443 31.2805L52.8768 17.048C57.1518 12.773 62.8344 10.427 68.8819 10.427C74.9295 10.427 80.6121 12.773 84.887 17.048C89.1193 21.31 91.4945 27.0727 91.4945 33.0791C91.4945 39.0856 89.1193 44.8483 84.887 49.1103H84.9392Z" fill="black"/>
+                    </svg>
+                </button>
+                <span class="etiqueta-registro">Medicación</span>
+            </div>
+
+            <!-- Crisis -->
+            <div class="registro-item">
+                <button class="registro-circulo" data-tipo="crisis" aria-label="Crisis">
+                    <svg width="55" height="55" viewBox="0 0 112 100" fill="none">
+                        <path d="M55.6299 36.2734V58.9047M55.6299 74.7466V77.0097" stroke="black" stroke-width="9.18" stroke-linecap="round"/>
+                        <path d="M47.2149 9.35259L5.81224 81.6096C2.32376 87.6929 6.95466 95.116 14.2325 95.116H97.0226C104.306 95.116 108.926 87.6929 105.453 81.6096L64.0555 9.35259C60.4242 3.00226 50.8513 3.00226 47.2149 9.35259Z" stroke="black" stroke-width="9.18" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <span class="etiqueta-registro">Crisis</span>
+            </div>
+
+            <!-- Menstruación -->
+            <div class="registro-item">
+                <button class="registro-circulo" data-tipo="menstruacion" aria-label="Menstruación">
+                    <svg width="45" height="60" viewBox="0 0 68 110" fill="none">
+                        <path d="M34 0C15.2433 0 0 14.7131 0 32.8174C0 49.062 12.2967 62.5171 28.3333 65.1425V76.5739H11.3333V87.513H28.3333V109.391H39.6667V87.513H56.6667V76.5739H39.6667V65.1425C55.7033 62.5171 68 49.062 68 32.8174C68 14.7131 52.7567 0 34 0ZM34 54.6957C21.4767 54.6957 11.3333 44.9051 11.3333 32.8174C11.3333 20.7297 21.4767 10.9391 34 10.9391C46.5233 10.9391 56.6667 20.7297 56.6667 32.8174C56.6667 44.9051 46.5233 54.6957 34 54.6957Z" fill="black"/>
+                    </svg>
+                </button>
+                <span class="etiqueta-registro">Menstruación</span>
+            </div>
+        </div>
+
+        <!-- MODAL CRISIS -->
+        <div id="modal-crisis" class="modal-overlay oculto">
+            <div class="modal-tarjeta">
+                <button type="button" class="btn-cerrar-modal" id="btn-cerrar-modal" aria-label="Cerrar">&times;</button>
+               
+                <div class="modal-encabezado">
+                    <h2 class="modal-titulo">Crisis</h2>
+                    <svg width="45" height="40" viewBox="0 0 104 93" fill="none">
+                        <path d="M51.812 33.7832V54.8613M51.812 69.616V71.7238" stroke="black" stroke-width="8.55" stroke-linecap="round"/>
+                        <path d="M43.9745 8.71128L5.41321 76.0095C2.16413 81.6753 6.47723 88.5889 13.2556 88.5889H90.3641C97.1472 88.5889 101.451 81.6753 98.216 76.0095L59.6594 8.71128C56.2773 2.79676 47.3614 2.79676 43.9745 8.71128Z" stroke="black" stroke-width="8.55" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <form id="form-crisis">
+                    <!-- ¿Qué tipo de crisis tuviste? -->
+                    <div class="caja-campo">
+                        <label for="tipo-crisis">¿Qué tipo de crisis tuviste?</label>
+                        <div class="input-desplegable-wrapper">
+                            <input type="text" id="tipo-crisis" list="lista-tipos" placeholder="Escribí o seleccioná..." autocomplete="off">
+                            <datalist id="lista-tipos"></datalist>
+                        </div>
+                    </div>
+
+                    <!-- ¿Cuándo? -->
+                    <div class="caja-campo">
+                        <label>¿Cuándo?</label>
+                        <div class="grupo-fecha">
+                            <input type="number" id="dia" placeholder="dd" min="1" max="31">
+                            <span class="separador-fecha">/</span>
+                            <input type="number" id="mes" placeholder="mm" min="1" max="12">
+                            <span class="separador-fecha">/</span>
+                            <input type="number" id="anio" placeholder="aaaa" min="1000" max="9999">
+                        </div>
+                    </div>
+
+                    <!-- ¿A qué hora ocurrió? + AM/PM -->
+                    <div class="caja-campo">
+                        <label for="hora-crisis">¿A qué hora ocurrió?</label>
+                        <div class="campo-hora-caja">
+                            <input type="time" id="hora-crisis">
+                            <div class="opciones-periodo">
+                                <button type="button" class="btn-periodo" data-periodo="AM">AM</button>
+                                <button type="button" class="btn-periodo" data-periodo="PM">PM</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Observaciones -->
+                    <div class="caja-campo">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea id="observaciones" maxlength="10" placeholder="Máximo 10 caracteres"></textarea>
+                    </div>
+
+                    <!-- Botón Guardar -->
+                    <button type="button" id="guardar" class="btn-guardar-modal">
+                        <svg width="32" height="32" viewBox="0 0 73 72" fill="none">
+                            <path d="M17.8079 68.7743H54.6162C58.5211 68.7743 62.266 67.2363 65.0272 64.4987C67.7883 61.7611 69.3395 58.0481 69.3395 54.1765V19.1927C69.3393 18.2249 68.9341 17.2968 68.261 16.6125L55.6947 4.15328C55.0045 3.46882 54.0685 3.08419 53.0923 3.08398H17.8079C13.903 3.08398 10.1581 4.62197 7.3969 7.3596C4.63574 10.0972 3.08453 13.8102 3.08453 17.6818V54.1765C3.08453 58.0481 4.63574 61.7611 7.3969 64.4987C10.1581 67.2363 13.903 68.7743 17.8079 68.7743Z" stroke="black" stroke-width="6.16" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M54.616 68.7743V43.2281C54.616 42.2602 54.2282 41.3319 53.5379 40.6475C52.8476 39.9631 51.9114 39.5786 50.9352 39.5786H21.4885C20.5123 39.5786 19.5761 39.9631 18.8858 40.6475C18.1955 41.3319 17.8077 42.2602 17.8077 43.2281V68.7743" stroke="black" stroke-width="6.16"/>
+                        </svg>
+                        <span>Guardar registro</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- MODAL MENSTRUACIÓN -->
+        <div id="modal-menstruacion" class="modal-overlay oculto">
+            <div class="modal-tarjeta">
+                <button type="button" class="btn-cerrar-modal" id="btn-cerrar-menstruacion" aria-label="Cerrar">&times;</button>
+               
+                <div class="modal-encabezado">
+                    <h2 class="modal-titulo">Menstruación</h2>
+                    <svg width="32" height="50" viewBox="0 0 45 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.0676 0C9.89363 0 0 9.5495 0 21.3C0 31.8435 7.9811 40.5765 18.3896 42.2805V49.7H7.35586V56.8H18.3896V71H25.7455V56.8H36.7793V49.7H25.7455V42.2805C36.154 40.5765 44.1351 31.8435 44.1351 21.3C44.1351 9.5495 34.2415 0 22.0676 0ZM22.0676 35.5C13.9393 35.5 7.35586 29.1455 7.35586 21.3C7.35586 13.4545 13.9393 7.1 22.0676 7.1C30.1958 7.1 36.7793 13.4545 36.7793 21.3C36.7793 29.1455 30.1958 35.5 22.0676 35.5Z" fill="black"/>
+                    </svg>
+                </div>
+
+                <form id="form-menstruacion">
+                    <!-- Fecha Inicio -->
+                    <div class="caja-campo">
+                        <div class="label-con-icono">
+                            <svg width="24" height="22" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2 2.59961V12.9996M39 2.59961V12.9996M2.59998 23.3996H54.6" stroke="black" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M44.2 2.59961H13C7.25621 2.59961 2.59998 7.25585 2.59998 12.9996V38.9996C2.59998 44.7434 7.25621 49.3996 13 49.3996H44.2C49.9437 49.3996 54.6 44.7434 54.6 38.9996V12.9996C54.6 7.25585 49.9437 2.59961 44.2 2.59961Z" stroke="black" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <label>¿En qué fecha empezó el período?</label>
+                        </div>
+                        <div class="grupo-fecha">
+                            <input type="number" id="inicio-dia" placeholder="dd" min="1" max="31">
+                            <span class="separador-fecha">/</span>
+                            <input type="number" id="inicio-mes" placeholder="mm" min="1" max="12">
+                            <span class="separador-fecha">/</span>
+                            <input type="number" id="inicio-anio" placeholder="aaaa" min="1000" max="9999">
+                        </div>
+                    </div>
+
+                    <!-- Fecha Fin -->
+                    <div class="caja-campo">
+                        <div class="label-con-icono">
+                            <svg width="24" height="22" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2 2.59961V12.9996M39 2.59961V12.9996M2.59998 23.3996H54.6" stroke="black" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M44.2 2.59961H13C7.25621 2.59961 2.59998 7.25585 2.59998 12.9996V38.9996C2.59998 44.7434 7.25621 49.3996 13 49.3996H44.2C49.9437 49.3996 54.6 44.7434 54.6 38.9996V12.9996C54.6 7.25585 49.9437 2.59961 44.2 2.59961Z" stroke="black" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <label>¿En qué fecha terminó el período?</label>
+                        </div>
+                        <div class="grupo-fecha">
+                            <input type="number" id="fin-dia" placeholder="dd" min="1" max="31">
+                            <span class="separador-fecha">/</span>
+                            <input type="number" id="fin-mes" placeholder="mm" min="1" max="12">
+                            <span class="separador-fecha">/</span>
+                            <input type="number" id="fin-anio" placeholder="aaaa" min="1000" max="9999">
+                        </div>
+                    </div>
+
+                    <!-- Observaciones -->
+                    <div class="caja-campo">
+                        <label for="obs-menstruacion">Observaciones</label>
+                        <textarea id="obs-menstruacion" maxlength="10" placeholder="Máximo 10 caracteres"></textarea>
+                    </div>
+
+                    <!-- Botón Guardar -->
+                    <button type="button" id="guardar-menstruacion" class="btn-guardar-modal">
+                        <svg width="32" height="32" viewBox="0 0 73 72" fill="none">
+                            <path d="M17.8079 68.7743H54.6162C58.5211 68.7743 62.266 67.2363 65.0272 64.4987C67.7883 61.7611 69.3395 58.0481 69.3395 54.1765V19.1927C69.3393 18.2249 68.9341 17.2968 68.261 16.6125L55.6947 4.15328C55.0045 3.46882 54.0685 3.08419 53.0923 3.08398H17.8079C13.903 3.08398 10.1581 4.62197 7.3969 7.3596C4.63574 10.0972 3.08453 13.8102 3.08453 17.6818V54.1765C3.08453 58.0481 4.63574 61.7611 7.3969 64.4987C10.1581 67.2363 13.903 68.7743 17.8079 68.7743Z" stroke="black" stroke-width="6.16" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M54.616 68.7743V43.2281C54.616 42.2602 54.2282 41.3319 53.5379 40.6475C52.8476 39.9631 51.9114 39.5786 50.9352 39.5786H21.4885C20.5123 39.5786 19.5761 39.9631 18.8858 40.6475C18.1955 41.3319 17.8077 42.2602 17.8077 43.2281V68.7743" stroke="black" stroke-width="6.16"/>
+                        </svg>
+                        <span>Guardar registro</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- MODAL MEDICACIÓN -->
+<div id="modal-medicacion" class="modal-overlay oculto">
+    <div class="modal-tarjeta">
+        <button type="button" class="btn-cerrar-modal" id="btn-cerrar-medicacion" aria-label="Cerrar">&times;</button>
+       
+        <div class="modal-encabezado">
+            <h2 class="modal-titulo">Medicación</h2>
+            <svg width="45" height="45" viewBox="0 0 90 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60.8242 0.000152997C56.9864 -0.012317 53.1844 0.737601 49.6388 2.20638C46.0932 3.67516 42.8746 5.83354 40.1699 8.55625L8.52159 40.2046C-2.84053 51.5667 -2.84053 70.1049 8.52159 81.5131C14.0417 87.0331 21.3557 90.0692 29.1758 90.0692C36.9959 90.0692 44.31 87.0331 49.8301 81.5131L81.4784 49.8647C92.8405 38.5026 92.8405 19.9644 81.4784 8.55625C78.7737 5.83354 75.5551 3.67516 72.0096 2.20638C68.464 0.737601 64.6619 -0.012317 60.8242 0.000152997ZM74.9463 43.3326L62.3882 55.8908L34.0979 27.6005L46.656 15.0423C50.4281 11.2703 55.4421 9.20026 60.7782 9.20026C66.1142 9.20026 71.1283 11.2703 74.9003 15.0423C78.6347 18.8029 80.7305 23.8877 80.7305 29.1875C80.7305 34.4873 78.6347 39.572 74.9003 43.3326H74.9463Z" fill="black"/>
+            </svg>
+        </div>
+
+        <form id="form-medicacion">
+            <!-- Tipo de Medicación -->
+            <div class="caja-campo">
+                <label for="tipo-med-categoria">¿Qué tipo medicación tomaste?</label>
+                <div class="input-desplegable-wrapper">
+                    <select id="tipo-med-categoria" class="input-caja-select">
+                        <option value="" disabled selected>selecciona</option>
+                        <option value="Crónica">Crónica</option>
+                        <option value="Rescate">Rescate</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down icono-flecha-select"></i>
+                </div>
+            </div>
+
+            <!-- Medicación y Dosis en 2 columnas -->
+            <div class="fila-dos-columnas">
+                <div class="caja-campo">
+                    <label for="nombre-med">Medicación</label>
+                    <div class="input-desplegable-wrapper">
+                        <input type="text" id="nombre-med" list="lista-nombres-med" placeholder="selecciona" autocomplete="off">
+                        <datalist id="lista-nombres-med"></datalist>
+                        <i class="fa-solid fa-chevron-down icono-flecha-select"></i>
+                    </div>
+                </div>
+
+                <div class="caja-campo">
+                    <label for="dosis-med">Dosis</label>
+                    <div class="input-desplegable-wrapper">
+                        <input type="text" id="dosis-med" list="lista-dosis-med" placeholder="selecciona" autocomplete="off">
+                        <datalist id="lista-dosis-med"></datalist>
+                        <i class="fa-solid fa-chevron-down icono-flecha-select"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hora + Botones AM/PM -->
+            <div class="caja-campo">
+                <div class="label-con-icono">
+                    <svg width="28" height="28" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.5 52.5C41.3071 52.5 52.5 41.3071 52.5 27.5C52.5 13.6929 41.3071 2.5 27.5 2.5C13.6929 2.5 2.5 13.6929 2.5 27.5C2.5 41.3071 13.6929 52.5 27.5 52.5Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35 37.5L28.965 31.465C28.0273 30.5275 27.5003 29.256 27.5 27.93V12.5" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <label for="hora-med">¿A qué hora la tomaste?</label>
+                </div>
+                <div class="campo-hora-caja">
+                    <input type="time" id="hora-med">
+                    <div class="opciones-periodo">
+                        <button type="button" class="btn-periodo-med" data-periodo="AM">AM</button>
+                        <button type="button" class="btn-periodo-med" data-periodo="PM">PM</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fecha -->
+            <div class="caja-campo">
+                <div class="label-con-icono">
+                    <svg width="24" height="24" viewBox="0 0 58 52" fill="none">
+                        <path d="M18.2 2.59961V12.9996M39 2.59961V12.9996M2.59998 23.3996H54.6" stroke="black" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M44.2 2.59961H13C7.25621 2.59961 2.59998 7.25585 2.59998 12.9996V38.9996C2.59998 44.7434 7.25621 49.3996 13 49.3996H44.2C49.9437 49.3996 54.6 44.7434 54.6 38.9996V12.9996C54.6 7.25585 49.9437 2.59961 44.2 2.59961Z" stroke="black" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <label>¿Cuándo?</label>
+                </div>
+                <div class="grupo-fecha">
+                    <input type="number" id="med-dia" placeholder="dd" min="1" max="31">
+                    <span class="separador-fecha">/</span>
+                    <input type="number" id="med-mes" placeholder="mm" min="1" max="12">
+                    <span class="separador-fecha">/</span>
+                    <input type="number" id="med-anio" placeholder="aaaa" min="1000" max="9999">
+                </div>
+            </div>
+
+            <!-- Botón Guardar -->
+            <button type="button" id="guardar-medicacion" class="btn-guardar-modal">
+                <svg width="32" height="32" viewBox="0 0 73 72" fill="none">
+                    <path d="M17.8079 68.7743H54.6162C58.5211 68.7743 62.266 67.2363 65.0272 64.4987C67.7883 61.7611 69.3395 58.0481 69.3395 54.1765V19.1927C69.3393 18.2249 68.9341 17.2968 68.261 16.6125L55.6947 4.15328C55.0045 3.46882 54.0685 3.08419 53.0923 3.08398H17.8079C13.903 3.08398 10.1581 4.62197 7.3969 7.3596C4.63574 10.0972 3.08453 13.8102 3.08453 17.6818V54.1765C3.08453 58.0481 4.63574 61.7611 7.3969 64.4987C10.1581 67.2363 13.903 68.7743 17.8079 68.7743Z" stroke="black" stroke-width="6.16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M54.616 68.7743V43.2281C54.616 42.2602 54.2282 41.3319 53.5379 40.6475C52.8476 39.9631 51.9114 39.5786 50.9352 39.5786H21.4885C20.5123 39.5786 19.5761 39.9631 18.8858 40.6475C18.1955 41.3319 17.8077 42.2602 17.8077 43.2281V68.7743" stroke="black" stroke-width="6.16"/>
+                </svg>
+                <span>Guardar registro</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- MODAL SUEÑO -->
+        <div id="modal-sueno" class="modal-overlay oculto">
+            <div class="modal-tarjeta">
+                <button type="button" class="btn-cerrar-modal" id="btn-cerrar-sueno" aria-label="Cerrar">&times;</button>
+               
+                <div class="modal-encabezado">
+                    <h2 class="modal-titulo">Sueño</h2>
+                    <svg width="45" height="40" viewBox="0 0 106 100" fill="none">
+                        <path d="M99.1424 57.58C95.0093 58.7292 90.7702 59.3288 86.5311 59.3288C62.5801 59.3288 43.0802 40.9418 43.0802 18.3578C43.0802 14.3606 43.7161 10.3635 44.9348 6.46621C45.5177 4.71745 44.9878 2.76883 43.6101 1.46975C42.2324 0.170666 40.2188 -0.32898 38.3112 0.220631C27.2028 3.38362 17.4739 9.84305 10.5713 18.6382C3.66874 27.4334 -0.0387262 38.0946 0.000305051 49.0361C0.000305051 77.1162 24.2162 100 54.0489 100C78.0529 100 98.8245 85.4603 105.766 63.8256C106.349 62.0768 105.819 60.1282 104.441 58.8291C103.064 57.5301 101.05 57.0304 99.1424 57.58ZM54.0489 90.0071C30.098 90.0071 10.5981 71.6201 10.5981 49.0361C10.5675 41.7584 12.606 34.6059 16.5014 28.323C20.3968 22.0401 26.0067 16.8564 32.7474 13.3114C32.5884 15.0102 32.4825 16.709 32.4825 18.4078C32.4825 46.4879 56.6984 69.3717 86.5311 69.3717C88.3327 69.3717 90.1343 69.2717 91.9359 69.1218C84.4115 81.9128 70.1045 90.0071 54.0489 90.0071ZM74.1847 30.0495L79.1656 19.7568L90.0813 15.0601L79.1656 10.3634L74.1847 0.070737L69.2037 10.3634L58.288 15.0601L69.2037 19.7568L74.1847 30.0495ZM96.7049 27.5513L93.7906 33.547L87.4319 36.2951L93.7906 39.0431L96.7049 45.0389L99.6193 39.0431L105.978 36.2951L99.6193 33.547L96.7049 27.5513Z" fill="black"/>
+                    </svg>
+                </div>
+
+                <form id="form-sueno">
+                   <!-- ¿A qué hora te dormiste? -->
+<div class="caja-campo">
+    <div class="label-con-icono">
+        <svg width="24" height="24" viewBox="0 0 55 55" fill="none">
+            <path d="M27.5 52.5C41.3071 52.5 52.5 41.3071 52.5 27.5C52.5 13.6929 41.3071 2.5 27.5 2.5C13.6929 2.5 2.5 13.6929 2.5 27.5C2.5 41.3071 13.6929 52.5 27.5 52.5Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M35 37.5L28.965 31.465C28.0273 30.5275 27.5003 29.256 27.5 27.93V12.5" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <label for="hora-dormiste">¿A qué hora te dormiste?</label>
+    </div>
+    <div class="fila-hora-periodo">
+        <input type="time" class="input-hora-individual" id="hora-dormiste">
+        <div class="opciones-periodo">
+            <button type="button" class="btn-periodo-circulo btn-periodo-dormiste" data-periodo="AM">AM</button>
+            <button type="button" class="btn-periodo-circulo btn-periodo-dormiste" data-periodo="PM">PM</button>
+        </div>
+    </div>
+</div>
+
+<!-- ¿A qué hora te despertaste? -->
+<div class="caja-campo">
+    <div class="label-con-icono">
+        <svg width="24" height="24" viewBox="0 0 55 55" fill="none">
+            <path d="M27.5 52.5C41.3071 52.5 52.5 41.3071 52.5 27.5C52.5 13.6929 41.3071 2.5 27.5 2.5C13.6929 2.5 2.5 13.6929 2.5 27.5C2.5 41.3071 13.6929 52.5 27.5 52.5Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M35 37.5L28.965 31.465C28.0273 30.5275 27.5003 29.256 27.5 27.93V12.5" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <label for="hora-despertaste">¿A qué hora te despertaste?</label>
+    </div>
+    <div class="fila-hora-periodo">
+        <input type="time" class="input-hora-individual" id="hora-despertaste">
+        <div class="opciones-periodo">
+            <button type="button" class="btn-periodo-circulo btn-periodo-despertaste" data-periodo="AM">AM</button>
+            <button type="button" class="btn-periodo-circulo btn-periodo-despertaste" data-periodo="PM">PM</button>
+        </div>
+    </div>
+</div>
+
+                    <!-- ¿Cuántas veces te despertaste? -->
+                    <div class="caja-campo">
+                        <div class="label-con-icono">
+                            <svg width="28" height="24" viewBox="0 0 65 56" fill="none">
+                                <path d="M64.6385 25.6185C64.3779 25.0644 63.9776 24.5877 63.4769 24.2352C62.9763 23.8828 62.3925 23.6666 61.783 23.608C58.7447 23.2966 55.927 21.8787 53.8665 19.6242C52.0997 17.6365 50.8924 15.2153 50.3678 12.6081C49.8433 10.0009 50.0204 7.30113 50.881 4.78478C51.0845 4.17745 51.1276 3.52779 51.006 2.89891C50.8843 2.27002 50.6022 1.68327 50.1868 1.19564C49.8068 0.745173 49.3152 0.402372 48.7611 0.201519C48.207 0.00066609 47.6099 -0.0511994 47.0295 0.0511098L46.9854 0.0580751C43.0099 0.93265 39.4363 3.10013 36.8236 6.22153C34.2109 9.34294 32.7063 13.2422 32.5452 17.3096C30.6715 16.6194 28.6917 16.2612 26.6949 16.251C22.9977 16.2702 19.4012 17.4581 16.4199 19.6447C13.4385 21.8313 11.2249 24.9047 10.0957 28.4253C6.86733 29.3464 4.08089 31.4038 2.2503 34.2181C0.41971 37.0323 -0.331548 40.4136 0.13508 43.7383C0.601708 47.0629 2.25475 50.1067 4.78933 52.3083C7.32391 54.5099 10.5691 55.7207 13.9263 55.7176H39.4635C41.7127 55.7263 43.9304 55.1881 45.9254 54.1494C47.9205 53.1107 49.6331 51.6026 50.9158 49.7549C52.1985 47.9073 53.0129 45.7755 53.2887 43.5432C53.5645 41.3109 53.2935 39.0451 52.4991 36.9408C54.922 36.5545 57.2359 35.6605 59.2892 34.3174C61.3424 32.9743 63.0886 31.2124 64.4134 29.1473C64.7536 28.6291 64.9533 28.0313 64.9927 27.4127C65.0322 26.794 64.9102 26.1757 64.6385 25.6185ZM39.4635 51.0744H13.9263C11.6008 51.0783 9.35878 50.208 7.64496 48.6361C5.93115 47.0642 4.87075 44.9055 4.6741 42.5884C4.47744 40.2712 5.1589 37.9647 6.5833 36.1265C8.00771 34.2882 10.071 33.0525 12.3639 32.6644L13.9031 32.4044L14.2397 30.8815C14.8697 28.0478 16.4471 25.5137 18.7116 23.6974C20.976 21.8812 23.7921 20.8913 26.6949 20.8913C29.5977 20.8913 32.4138 21.8812 34.6782 23.6974C36.9427 25.5137 38.5201 28.0478 39.1501 30.8815L39.4867 32.4044L41.0259 32.6668C43.3159 33.0579 45.3755 34.2946 46.7971 36.132C48.2186 37.9694 48.8985 40.2736 48.702 42.5884C48.5055 44.9032 47.447 47.0599 45.7361 48.6315C44.0252 50.203 41.7866 51.0749 39.4635 51.0744ZM49.8293 32.4996H49.7805C48.0443 30.5578 45.7951 29.1455 43.2918 28.4253C42.2017 25.0287 40.0947 22.0488 37.2557 19.8889C37.2325 19.6544 37.1721 19.4315 37.1605 19.1927C36.9588 16.2225 37.7011 13.2649 39.2814 10.7423C40.8616 8.2197 43.199 6.26126 45.9592 5.14694C45.2314 8.23162 45.2609 11.4466 46.0452 14.5174C46.8294 17.5882 48.3452 20.4237 50.4631 22.7815C52.8736 25.4029 56.0391 27.2104 59.5218 27.954C58.3388 29.3765 56.8572 30.5212 55.1821 31.3068C53.507 32.0924 51.6795 32.4996 49.8293 32.4996Z" fill="black"/>
+                            </svg>
+                            <label>¿Cuántas veces te despertaste?</label>
+                        </div>
+                        <div class="contador-veces">
+                            <button type="button" class="btn-contador" id="btn-menos">[ - ]</button>
+                            <span id="valor-contador">0</span>
+                            <button type="button" class="btn-contador" id="btn-mas">[ + ]</button>
+                        </div>
+                    </div>
+
+                    <!-- Botón Guardar -->
+<button type="button" id="guardar-sueno" class="btn-guardar-modal">
+    <svg class="icono-disquete" viewBox="0 0 55 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.6002 55.5311H40.6175C43.4837 55.5311 46.2324 54.2964 48.2591 52.0985C50.2858 49.9007 51.4244 46.9198 51.4244 43.8115V15.7255C51.4242 14.9485 51.1395 14.2034 50.6328 13.6541L41.4091 3.65143C40.9025 3.10193 40.2155 2.79313 39.499 2.79297H13.6002C10.7341 2.79297 7.98529 4.02771 5.9586 6.22556C3.93192 8.42341 2.79333 11.4043 2.79333 14.5126V43.8115C2.79333 46.9198 3.93192 49.9007 5.9586 52.0985C7.98529 54.2964 10.7341 55.5311 13.6002 55.5311Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M40.6175 55.5311V35.0219C40.6175 34.2448 40.3329 33.4996 39.8262 32.9501C39.3195 32.4006 38.6324 32.092 37.9158 32.092H16.302C15.5855 32.092 14.8983 32.4006 14.3916 32.9501C13.8849 33.4996 13.6003 34.2448 13.6003 35.0219V55.5311M19.0037 2.79297H35.2141V11.5827C35.2141 12.3597 34.9294 13.105 34.4228 13.6544C33.9161 14.2039 33.2289 14.5126 32.5124 14.5126H21.7055C20.9889 14.5126 20.3017 14.2039 19.795 13.6544C19.2884 13.105 19.0037 12.3597 19.0037 11.5827V2.79297Z" stroke="black" stroke-width="4"/>
+        <path d="M24.4074 43.8105H29.8109" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <span>Guardar registro</span>
+</button>
+                </form>
+            </div>
+        </div>
+
+       <!-- MODAL ESTADO DE ÁNIMO -->
+<div id="modal-animo" class="modal-overlay oculto">
+    <div class="modal-tarjeta">
+        <button type="button" class="btn-cerrar-modal" id="btn-cerrar-animo" aria-label="Cerrar">&times;</button>
+        
+        <!-- Encabezado con Título e Ícono -->
+        <div class="modal-encabezado">
+            <h2 class="modal-titulo">Estado de Ánimo</h2>
+            <svg class="icono-animo-header" width="45" height="45" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M39.3077 75.8086C48.9881 75.8086 58.2721 71.9631 65.1171 65.118C71.9622 58.2729 75.8077 48.989 75.8077 39.3086C75.8077 29.6282 71.9622 20.3443 65.1171 13.4992C58.2721 6.65412 48.9881 2.80859 39.3077 2.80859C29.6273 2.80859 20.3434 6.65412 13.4983 13.4992C6.65326 20.3443 2.80774 29.6282 2.80774 39.3086C2.80774 48.989 6.65326 58.2729 13.4983 65.118C20.3434 71.9631 29.6273 75.8086 39.3077 75.8086Z" stroke-width="5.61538" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+            </svg>
+        </div>
+
+        <form id="form-animo">
+            <!-- Sección 1: Emociones -->
+            <p class="pregunta-animo">¿Cómo te sentiste durante el día?</p>
+            <div class="contenedor-cuadrados-emociones">
+                
+                <!-- Feliz -->
+                <button type="button" class="cuadrado-emocion" data-emocion="feliz">
+                    <div class="area-svg-emocion">
+                        <svg width="40" height="40" viewBox="0 0 54 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.61348 6.48744C9.94167 6.81563 10.3868 7 10.8509 7C11.315 7 11.7602 6.81563 12.0884 6.48744C12.4165 6.15925 12.6009 5.71413 12.6009 5.25C12.6009 4.78587 12.4165 4.34075 12.0884 4.01256C11.7602 3.68437 11.315 3.5 10.8509 3.5C10.3868 3.5 9.94167 3.68437 9.61348 4.01256C9.28529 4.34075 9.10091 4.78587 9.10091 5.25C9.10091 5.71413 9.28529 6.15925 9.61348 6.48744Z" fill="black"/>
+                            <path d="M41.1135 6.48744C41.4417 6.81563 41.8868 7 42.3509 7C42.815 7 43.2602 6.81563 43.5884 6.48744C43.9165 6.15925 44.1009 5.71413 44.1009 5.25C44.1009 4.78587 43.9165 4.34075 43.5884 4.01256C43.2602 3.68437 41.8868 3.5 42.3509 3.5C41.8868 3.5 41.4417 3.68437 41.1135 4.01256C40.7853 4.34075 40.6009 4.78587 40.6009 5.25C40.6009 5.71413 40.7853 6.15925 41.1135 6.48744Z" fill="black"/>
+                            <path d="M3.50092 24.5C7.00092 37.1 21.0009 44.8 33.6009 41.3C41.3009 38.5 47.6009 32.2 49.7009 24.5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                        </svg>
+                    </div>
+                    <span>feliz</span>
+                </button>
+
+                <!-- Irritable -->
+                <button type="button" class="cuadrado-emocion" data-emocion="irritable">
+                    <div class="area-svg-emocion">
+                        <svg width="40" height="30" viewBox="0 0 53 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.9 12.6V5.39927M39.9 5.39927V5.3928M39.9 5.39927C42.7533 4.15403 45.8494 3.5 49 3.5M39.9 5.39927C38.2953 6.09958 36.7675 6.98688 35.35 8.05M3.5 3.5C6.65056 3.5 9.74673 4.15403 12.6 5.39927M12.6 5.39927C14.2047 6.09958 15.7325 6.98688 17.15 8.05M12.6 5.39927V12.6M12.6 5.39927V5.3928M12.6 35.35C16.5383 32.3955 21.3289 30.7983 26.2523 30.7983C31.1757 30.7983 35.9662 32.3955 39.9046 35.35" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                        </svg>
+                    </div>
+                    <span>irritable</span>
+                </button>
+
+                <!-- Normal/Calmado -->
+                <button type="button" class="cuadrado-emocion activo" data-emocion="normal/calmado">
+                    <div class="area-svg-emocion">
+                        <svg width="40" height="12" viewBox="0 0 53 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.50024 9.52831C44.5395 5.28101 49.4463 3.5 49.4463 3.5" stroke-width="7" stroke-linecap="round" stroke="black"/>
+                        </svg>
+                    </div>
+                    <span>normal/calmado</span>
+                </button>
+
+                <!-- Ansioso -->
+                <button type="button" class="cuadrado-emocion" data-emocion="ansioso">
+                    <div class="area-svg-emocion">
+                        <svg width="40" height="40" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.1719 59.375C28.7041 59.375 26.7188 61.3604 26.7188 63.8281C26.7188 66.2959 28.7041 68.2812 31.1719 68.2812H32.6562V59.375H31.1719ZM38.5938 68.2812H44.5312V59.375H38.5938V68.2812ZM56.4062 68.2812V59.375H50.4688V68.2812H56.4062ZM62.3438 68.2812H63.8281C66.2959 68.2812 68.2812 66.2959 68.2812 63.8281C68.2812 61.3604 66.2959 59.375 63.8281 59.375H62.3438V68.2812ZM31.1719 53.4375H63.8281C69.5615 53.4375 74.2188 58.0947 74.2188 63.8281C74.2188 69.5615 69.5615 74.2188 63.8281 74.2188H31.1719C25.4385 74.2188 20.7812 69.5615 20.7812 63.8281C20.7812 58.0947 25.4385 53.4375 31.1719 53.4375Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <span>ansioso</span>
+                </button>
+
+                <!-- Triste -->
+                <button type="button" class="cuadrado-emocion" data-emocion="triste">
+                    <div class="area-svg-emocion">
+                        <svg width="40" height="40" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M45.5 47.125C41.3597 47.1196 37.2715 48.0471 33.5388 49.8385C29.8062 51.63 26.5252 54.2394 23.9395 57.473" stroke-width="4" stroke="black"/>
+                        </svg>
+                    </div>
+                    <span>triste</span>
+                </button>
+            </div>
+
+            <!-- Sección 2: Intensidad -->
+            <p class="pregunta-animo">¿Cuál fue la intensidad de esa emoción?</p>
+            <div class="bloque-intensidad-animo">
+                <input type="range" id="range-intensidad-animo" min="1" max="3" step="1" value="2" class="barra-range-animo">
+                <div class="etiquetas-intensidad-animo">
+                    <span>baja</span>
+                    <span>moderada</span>
+                    <span>alta</span>
+                </div>
+            </div>
+
+            <!-- Botón Guardar -->
+            <button type="button" id="guardar-animo" class="btn-guardar-modal">
+                <svg class="icono-disquete" viewBox="0 0 55 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.6002 55.5311H40.6175C43.4837 55.5311 46.2324 54.2964 48.2591 52.0985C50.2858 49.9007 51.4244 46.9198 51.4244 43.8115V15.7255C51.4242 14.9485 51.1395 14.2034 50.6328 13.6541L41.4091 3.65143C40.9025 3.10193 40.2155 2.79313 39.499 2.79297H13.6002C10.7341 2.79297 7.98529 4.02771 5.9586 6.22556C3.93192 8.42341 2.79333 11.4043 2.79333 14.5126V43.8115C2.79333 46.9198 3.93192 49.9007 5.9586 52.0985C7.98529 54.2964 10.7341 55.5311 13.6002 55.5311Z" stroke-width="5.58665" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+                </svg>
+                <span>guardar registro</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+    </main>
+
+    <script src="../js/registros.js"></script>
+</body>
+</html>

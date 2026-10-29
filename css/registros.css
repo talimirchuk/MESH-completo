@@ -1,0 +1,684 @@
+@import url('https://fonts.cdnfonts.com/css/comic-relief');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.main-registros {
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px 40px; /* <--- Agregá esto: 30px arriba/abajo y 40px a los lados */
+    box-sizing: border-box; /* Asegura que el padding no desarme el ancho */
+    font-family: 'Comic Relief', 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+
+.titulo-registros {
+    font-size: 55px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.titulo-registros::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #2e8b57;
+    border-radius: 4px;
+}
+
+.subtitulo-pregunta {
+    font-size: 38px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.registros-flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.registro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.registro-circulo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #97CCB9;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.registro-circulo:hover {
+    transform: scale(1.06);
+    background-color: #81bc92;
+}
+
+.registro-circulo:active {
+    transform: scale(0.98);
+}
+
+.etiqueta-registro {
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* ==========================================
+   ESTILOS GENERALES DE MODALES
+========================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-overlay.oculto {
+    display: none !important;
+}
+
+.modal-tarjeta {
+    background-color: #FFFFFF;
+    border: 10px solid #73C798;
+    border-radius: 45px;
+    width: 90%;
+    max-width: 580px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comic Relief', sans-serif;
+}
+
+.btn-cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-titulo {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #2e8b57;
+    text-underline-offset: 6px;
+}
+
+/* ==========================================
+   MODAL CRISIS Y MENSTRUACIÓN
+========================================== */
+#form-crisis,
+#form-menstruacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.caja-campo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.caja-campo label {
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+}
+
+.input-desplegable-wrapper {
+    width: 85%;
+    position: relative;
+}
+
+.input-desplegable-wrapper input,
+.grupo-fecha input,
+textarea#observaciones {
+    width: 100%;
+    background-color: #D5EDE4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+
+.grupo-fecha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 85%;
+}
+
+.separador-fecha {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* CAJA DE HORA Y BOTONES AM/PM */
+.campo-hora-caja {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    background-color: #D5EDE4;
+    border-radius: 20px;
+    padding: 6px 14px;
+    box-sizing: border-box;
+}
+
+.campo-hora-caja input[type="time"] {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-family: inherit;
+    outline: none;
+    text-align: center;
+    width: 110px;
+}
+
+.opciones-periodo {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-periodo {
+    background-color: #A9D2C3;
+    border: none;
+    padding: 6px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.btn-periodo.seleccionado {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+}
+
+textarea#observaciones {
+    height: 75px;
+    resize: none;
+    text-align: left;
+}
+
+.btn-guardar-modal {
+    background-color: #B9D3BF;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease;
+}
+
+.btn-guardar-modal:hover {
+    transform: scale(1.03);
+    background-color: #81bc92;
+}
+
+.btn-guardar-modal span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Alineación de etiqueta con ícono de calendario en Menstruación */
+.label-con-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.label-con-icono label {
+    font-size: 20px;
+    color: #000;
+}
+
+#obs-menstruacion {
+    width: 100%;
+    max-width: 703px;
+    height: 98px;
+    background-color: rgba(213, 237, 228, 0.8);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 12px 16px;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   MODAL MEDICACIÓN
+========================================== */
+#form-medicacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+/* Alineación de textos a la izquierda solo en Medicación */
+#modal-medicacion .caja-campo label,
+#modal-medicacion .label-con-icono {
+    text-align: left;
+    justify-content: flex-start;
+    width: 85%;
+}
+
+/* Fila de 2 columnas (Medicación y Dosis) */
+.fila-dos-columnas {
+    display: flex;
+    gap: 15px;
+    width: 85%;
+}
+
+.fila-dos-columnas .caja-campo {
+    width: 50%;
+}
+
+/* Select con texto alineado a la izquierda */
+.input-caja-select {
+    width: 100%;
+    background-color: #D5EDE4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px 10px 18px;
+    font-size: 18px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    text-align: left;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+/* Flechita personalizada en los desplegables */
+.icono-flecha-select {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Botones circulares AM / PM para Medicación */
+.btn-periodo-med {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #B4D5C0;
+    border: none;
+    font-family: 'Itim', cursive, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.btn-periodo-med:hover {
+    background-color: #98c4a7;
+    transform: scale(1.05);
+}
+
+.btn-periodo-med:focus {
+    outline: 3px solid #2E8B57;
+}
+
+.btn-periodo-med.seleccionado {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+}
+
+/*MODAL SUEÑO Y CONTADOR*/
+#form-sueno {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+/* Alineación general del bloque de la pregunta a la izquierda */
+#form-sueno .caja-campo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinea todo el contenido a la izquierda */
+    gap: 8px;
+}
+
+/* Alineación de la etiqueta con su ícono */
+#form-sueno .label-con-icono {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+#form-sueno .label-con-icono label {
+    font-size: 22px;
+    color: #000;
+    text-align: left;
+}
+
+/* Fila para acomodar el recuadro de la hora y los botones AM/PM */
+.fila-hora-periodo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    /* el padding-left compensa el ancho del icono (24px) + el gap (10px) para que empiece en la '¿' */
+    padding-left: 34px; 
+}
+
+/* Recuadro de la hora hh:mm que empieza donde arranca el texto */
+.input-hora-individual {
+    width: calc(100% - 160px); /* se estira hasta dejar espacio exacto a los botones */
+    background-color: #D5EDE4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+
+/* Opciones AM/PM por fuera del recuadro verde */
+.opciones-periodo {
+    display: flex;
+    gap: 12px;
+}
+
+/* Botones circulares AM / PM independientes */
+.btn-periodo-circulo {
+    width: 65px;
+    height: 54px;
+    border-radius: 45px;
+    background-color: #B9D3BF;
+    border: none;
+    font-family: 'Itim', cursive, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-periodo-circulo:hover {
+    background-color: #98c4a7;
+    transform: scale(1.04);
+}
+
+.btn-periodo-circulo.seleccionado {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+}
+
+/* Estilos del contador [ - ] 0 [ + ] */
+.contador-veces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.btn-contador {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    padding: 5px 10px;
+    transition: transform 0.1s ease;
+}
+
+.btn-contador:active {
+    transform: scale(0.9);
+}
+
+#valor-contador {
+    font-size: 26px;
+    font-weight: bold;
+    color: #555;
+    min-width: 25px;
+    text-align: center;
+}
+/* Ajuste preciso del botón e ícono Guardar Registro */
+.btn-guardar-modal {
+    background-color: #B9D3BF;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-guardar-modal:hover {
+    transform: scale(1.03);
+    background-color: #81bc92;
+}
+
+/* Control estricto de tamaño para el SVG disquete */
+.btn-guardar-modal svg.icono-disquete {
+    width: 28px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.btn-guardar-modal span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+/* ==========================================
+   MODAL ESTADO DE ÁNIMO
+========================================== */
+
+/* Ancho personalizado para la tarjeta de Ánimo */
+#modal-animo .modal-tarjeta {
+    max-width: 800px;
+}
+
+#form-animo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.pregunta-animo {
+    font-size: 22px;
+    color: #000;
+    margin: 10px 0 5px 0;
+    text-align: left;
+}
+
+/* Contenedor horizontal de 5 emociones */
+.contenedor-cuadrados-emociones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cuadrado-emocion {
+    flex: 1;
+    height: 125px;
+    border-radius: 18px;
+    background-color: #D5EDE4;
+    border: 2px solid #98DFB8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 8px 4px;
+    box-sizing: border-box;
+}
+
+.cuadrado-emocion:hover,
+.cuadrado-emocion.activo {
+    background-color: #A9D2C3;
+    border-color: #2E8B57;
+}
+
+.area-svg-emocion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 100%;
+}
+
+.cuadrado-emocion span {
+    font-family: inherit;
+    font-size: 15px;
+    color: #000;
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* Slider de Intensidad */
+.bloque-intensidad-animo {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.barra-range-animo {
+    width: 100%;
+    height: 22px;
+    background: #D5EDE4;
+    border-radius: 20px;
+    outline: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.barra-range-animo::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #46D3C1;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.barra-range-animo::-webkit-slider-thumb:hover {
+    transform: scale(1.05);
+}
+
+.etiquetas-intensidad-animo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+#form-animo .btn-guardar-modal {
+    align-self: center;
+}

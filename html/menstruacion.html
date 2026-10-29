@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESH - Menstruación</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/menstruacion.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <a href="registros.html" class="btn-volver">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h1>MENSTRUACIÓN <i class="fa-solid fa-venus"></i></h1>
+    </div>
+
+    <form id="form-menstruacion">
+
+        <!-- ¿Qué día inició el período? -->
+        <div class="caja-seccion">
+            <label class="titulo-pregunta">¿Qué día inició el período?</label>
+            <div class="caja-fecha-triple">
+                <div class="caja-campo">
+                    <label for="inicio-dia">Día</label>
+                    <input type="text" id="inicio-dia" class="formulario" maxlength="2" required>
+                </div>
+                <div class="caja-campo">
+                    <label for="inicio-mes">Mes</label>
+                    <select id="inicio-mes" class="formulario" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                </div>
+                <div class="caja-campo">
+                    <label for="inicio-anio">Año</label>
+                    <input type="text" id="inicio-anio" class="formulario" maxlength="4" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- ¿Qué día finalizó el período? -->
+        <div class="caja-seccion">
+            <label class="titulo-pregunta">¿Qué día finalizó el período?</label>
+            <div class="caja-fecha-triple">
+                <div class="caja-campo">
+                    <label for="fin-dia">Día</label>
+                    <input type="text" id="fin-dia" class="formulario" maxlength="2" required>
+                </div>
+                <div class="caja-campo">
+                    <label for="fin-mes">Mes</label>
+                    <select id="fin-mes" class="formulario" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="Enero">Enero</option>
+                        <option value="Febrero">Febrero</option>
+                        <option value="Marzo">Marzo</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Mayo">Mayo</option>
+                        <option value="Junio">Junio</option>
+                        <option value="Julio">Julio</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Septiembre">Septiembre</option>
+                        <option value="Octubre">Octubre</option>
+                        <option value="Noviembre">Noviembre</option>
+                        <option value="Diciembre">Diciembre</option>
+                    </select>
+                </div>
+                <div class="caja-campo">
+                    <label for="fin-anio">Año</label>
+                    <input type="text" id="fin-anio" class="formulario" maxlength="4" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- Observaciones y Botón -->
+        <div class="fila-inferior">
+            <div class="caja-campo">
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" class="formulario"></textarea>
+            </div>
+
+            <div class="caja-campo caja-guardar">
+                <button type="submit" id="guardar">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <span>Guardar registro</span>
+                </button>
+            </div>
+        </div>
+
+    </form>
+    <script src="../js/menstruacion.js"></script>
+</body>
+</html>

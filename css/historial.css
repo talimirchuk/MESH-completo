@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Itim&family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Comic Relief';
+    src: local('Comic Relief'), local('ComicNeue-Regular'), url('https://fonts.gstatic.com/s/comicneue/v8/4UaHrRFiBo3v6Cuic31683A3X93v.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-historial {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    flex: 1;
+    min-width: 0;      /* Evita que el contenido interno de historial empuje a la sidebar */
+    flex-grow: 1;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px 40px; 
+}
+
+/* Renglón 1: Ocupa todo el ancho posible de la pantalla */
+.renglon-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.titulo-historial {
+    font-family: 'Comic Relief', 'Comic Neue', cursive, sans-serif;
+    font-weight: 400;
+    font-size: 77px;
+    color: #1D2A3A;
+    margin: 0;
+    line-height: 100%;
+    border-bottom: 5px solid #21884F;
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+
+.buscador-container {
+    position: relative;
+    flex: 1; /* Ocupa todo el espacio que queda libre a la derecha */
+}
+
+#buscar {
+    width: 100%;
+    height: 60px;
+    background-color: #BAEBE3;
+    border: none;
+    border-radius: 100px;
+    padding: 0 60px 0 30px;
+    font-family: 'Itim', cursive, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #000000;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#buscar::placeholder {
+    font-family: 'Itim', cursive, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #000000;
+    opacity: 1;
+}
+
+.search-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Contenedor angosto centrado respecto al renglón superior */
+.contenedor-centrado {
+    width: 78%; /* Menos ancho que el renglón superior */
+    margin: 0 auto; /* Centrado horizontalmente */
+}
+
+/* Renglón 2: Categoría (60%) + Fecha (40%) */
+.historial-filtros {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.dropdown-categoria {
+    width: 60%; /* 60% del renglón */
+}
+
+.dropdown-periodo {
+    width: 40%; /* 40% del renglón */
+}
+
+.custom-dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    width: 100%;
+    background-color: #ACD8C0;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 30px;
+    font-family: 'Comic Relief', 'Comic Neue', cursive, sans-serif;
+    font-size: 32px;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    z-index: 100;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.custom-dropdown.open .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-item {
+    background-color: #B2EBF2;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: left;
+}
+
+.dropdown-item:hover, .dropdown-item.active {
+    background-color: #80DEEA;
+}
+
+/* Tarjetas */
+.dashboard-historial {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.tarjeta-dia {
+    border: 10px solid #14B8A6;
+    border-top-left-radius: 52px;
+    border-top-right-radius: 52px;
+    border-bottom-left-radius: 63px;
+    border-bottom-right-radius: 63px;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tarjeta-header {
+    background-color: #14B8A6;
+    padding: 12px 30px;
+}
+
+.tarjeta-header h2 {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* La información ocupa todo el espacio sin fondo blanco sobrante abajo */
+.tarjeta-body {
+    padding: 18px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registro-item {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    padding: 8px 0;
+}
+
+.registro-item:not(:last-child) {
+    border-bottom: 1px solid #e2e8f0; /* Separador sutil opcional entre registros */
+}
+
+.registro-hora {
+    width: 150px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.registro-categoria {
+    width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: #437D5D;
+}
+
+.registro-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.registro-icon svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.registro-info {
+    flex: 1;
+    font-weight: 400;
+    color: #000000;
+}
